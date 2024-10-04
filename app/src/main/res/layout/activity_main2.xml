@@ -35,14 +35,13 @@
 
     <ScrollView
 
-        android:layout_width="320dp"
-        android:layout_height="291dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="330dp"
+        android:layout_height="199dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.309">
 
         <TextView
             android:id="@+id/textViewScroll"
