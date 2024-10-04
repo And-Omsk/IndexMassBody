@@ -1,5 +1,9 @@
 package com.example.indexmassbody
 
+import java.text.NumberFormat;
+import java.text.ParseException;
+import java.util.Locale;
+
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
@@ -28,7 +32,9 @@ class MainActivity2 : AppCompatActivity() {
 
         val resultString = intent.getStringExtra("result")!!
         textView.text="Индекс тела = $resultString"
-        val index=resultString.toDouble()
+
+        val index=resultString.replace(",",".").toDouble()  //вот тут ошибка преобразования
+
         when (index) {
             in 0.0..18.9 ->{
                 imageView.setImageResource (R.drawable.ind18)
